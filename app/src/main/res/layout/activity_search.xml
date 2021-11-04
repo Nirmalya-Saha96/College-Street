@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.activities.SearchActivity">
+
+        <RadioGroup
+            android:id="@+id/rg_type_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/add_edit_address_radio_button_height"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <RadioButton
+                android:id="@+id/rb_book_title"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/add_edit_address_radio_button_height"
+                android:layout_weight="1"
+                android:background="@drawable/tab_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="Book Title"
+                android:textColor="@color/colorPrimaryText"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb_book_author"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/add_edit_address_radio_button_height"
+                android:layout_marginStart="@dimen/add_edit_address_radio_button_marginStartEnd"
+                android:layout_marginEnd="@dimen/add_edit_address_radio_button_marginStartEnd"
+                android:layout_weight="1"
+                android:background="@drawable/tab_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Book Author"
+                android:textColor="@color/colorPrimaryText"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb_blog"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/add_edit_address_radio_button_height"
+                android:layout_weight="1"
+                android:background="@drawable/tab_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Review/Blog"
+                android:textColor="@color/colorPrimaryText"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+            android:id="@+id/et_search_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:minWidth="300dp"
+            android:background="@drawable/tab_selector"
+            android:ems="10"
+            android:hint="Enter search text"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/rg_type_search"
+            app:layout_constraintEnd_toStartOf="@+id/btn_search"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_search"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/ic_vector_search"
+            android:background="@drawable/button_background"
+            app:layout_constraintTop_toBottomOf="@+id/rg_type_search"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_search_items"
+        android:layout_marginTop="150dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_search_text"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_search_text">
+
+        <ImageView
+            android:id="@+id/imgEmptyCart"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_vector_search" />
+
+        <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgEmptyCart"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="Type initial letters in searchbar"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_not_found_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_marginTop="150dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_search_text">
+
+        <ImageView
+            android:id="@+id/iv_not_found_search"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/not_found" />
+
+        <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_not_found_search"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="Not Found"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_switch_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_vector_camera"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="60dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

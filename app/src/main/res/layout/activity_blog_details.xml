@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/button_background"
+tools:context=".activities.ui.activities.BlogDetailsActivity">
+
+<ScrollView
+    android:layout_width="0dp"
+    android:layout_height="450dp"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/detail_page_bg">
+
+        <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+            android:id="@+id/tv_blog_details_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/ic_cat_bg"
+            android:gravity="center"
+            tools:text="User Name"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+            android:id="@+id/tv_blog_details_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            tools:text="Book Title"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tv_product_details_price"
+            app:layout_constraintStart_toStartOf="@+id/tv_blog_details_user_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_blog_details_user_name" />
+
+        <LinearLayout
+            android:id="@+id/ll_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_blog_details_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_blog_details_title">
+
+            <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                android:id="@+id/tv_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="0"
+                android:textAlignment="center"
+                android:minWidth="30dp"
+                android:layout_margin="10dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:background="@drawable/item_primary_color_border_background"/>
+
+            <ImageView
+                android:id="@+id/iv_likes"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_vector_wishlist" />
+
+            <ImageView
+                android:id="@+id/iv_unlike"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_vector_unlike" />
+
+        </LinearLayout>
+
+        <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+            android:id="@+id/tv_blog_details_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:lineSpacingExtra="2dp"
+            android:padding="10dp"
+            android:maxLines="5"
+            tools:text="jvbasif dfsdbfdshbfd fdsshbfdsfhbds fdsshfbsdhfbd fdhhfbdhbf dfbhdbfhdbf
+fdkfkdf djfbdjbfds fdbfjdbsifD FDIFJBDIFJD FDN FDJFDIBjbfdsf hjdvhfjdsfvdgfvdf
+fkdsfdsjhfvdjhf "
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/ll_likes"
+            app:layout_constraintStart_toStartOf="@+id/tv_blog_details_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_blog_details_title" />
+
+        <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+            android:id="@+id/tv_blog_details_description_visibility"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:lineSpacingExtra="2dp"
+            android:padding="10dp"
+            android:visibility="gone"
+            tools:text="jvbasif dfsdbfdshbfd fdsshbfdsfhbds fdsshfbsdhfbd fdhhfbdhbf dfbhdbfhdbf
+fdkfkdf djfbdjbfds fdbfjdbsifD FDIFJBDIFJD FDN FDJFDIBjbfdsf hjdvhfjdsfvdgfvdf
+fkdsfdsjhfvdjhf "
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/ll_likes"
+            app:layout_constraintStart_toStartOf="@+id/tv_blog_details_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_blog_details_title" />
+
+        <live.nirmalyasaha.me.bookstore.utils.MSPButton
+            android:id="@+id/btn_submit_send"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background"
+            android:padding="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="SEND"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+<ImageView
+    android:id="@+id/iv_blog_detail_image"
+    android:layout_width="256dp"
+    android:layout_height="381dp"
+    android:layout_marginTop="16dp"
+    android:adjustViewBounds="true"
+    android:scaleType="fitCenter"
+    android:transitionName="image"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/prod" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

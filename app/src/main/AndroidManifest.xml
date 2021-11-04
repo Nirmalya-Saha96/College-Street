@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="live.nirmalyasaha.me.bookstore">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BookStore">
+        <activity android:name=".activities.ui.activities.UserBlogActivity"></activity>
+        <activity android:name=".activities.ui.activities.UsersBookActivity" />
+        <activity android:name=".activities.ui.activities.MLImageToTextActivity" />
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+        <activity android:name=".activities.ui.activities.ChatBotActivity" />
+        <activity android:name=".activities.ui.activities.BlogDetailsActivity" />
+        <activity android:name=".activities.ui.activities.BlogReviewActivity" />
+        <activity android:name=".activities.ui.activities.EditMyBlogReviewActivity" />
+        <activity android:name=".activities.ui.activities.AddBlogReviewActivity" />
+        <activity android:name=".activities.ui.activities.MyBlogReviewActivity" />
+        <activity
+            android:name=".activities.ui.activities.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.ui.activities.ViewPagerActivity" />
+        <activity android:name=".activities.ui.activities.ChatCryptoActivity" />
+        <activity
+            android:name=".activities.ui.activities.NewMessengerActivity"
+            android:label="Select Users"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ui.activities.MessengerActivity"
+            android:label="Messenger"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activities.ui.activities.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".activities.ui.activities.SoldBookDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ui.activities.OrderDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.ui.activities.OrderSuccessActivity" />
+        <activity
+            android:name=".activities.ui.activities.CheckoutCryptoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ui.activities.AddEditAddressCryptoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ui.activities.AddressListCryptoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ui.activities.CartListActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.ui.activities.UpdateProductActivity" />
+        <activity android:name=".activities.ui.activities.ProductBookDetailsActivity2" />
+        <activity android:name=".activities.ui.activities.AddReviewActivity" />
+        <activity android:name=".activities.ui.activities.ReviewActivity" />
+        <activity android:name=".activities.ui.activities.PorfileDetailsActivity" />
+        <activity
+            android:name=".activities.ui.activities.ProductBookDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ui.activities.AddProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ui.activities.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ui.activities.DashboardActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ui.activities.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ui.activities.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.ui.activities.BaseActivity" />
+        <activity
+            android:name=".activities.ui.activities.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ui.activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".activities.ui.activities.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ui.activities.MainActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

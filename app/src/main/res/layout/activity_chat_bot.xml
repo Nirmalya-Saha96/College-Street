@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".activities.ui.activities.ChatBotActivity">
+
+
+<LinearLayout
+    android:id="@+id/ll_layout_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+
+    <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+        android:id="@+id/et_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight=".5"
+        android:ems="10"
+        android:hint="Enter Message"
+        android:background="@android:color/white"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/ic_vector_messenger"
+        android:background="@drawable/round_text_fields"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_messages"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/ll_layout_bar"
+    tools:itemCount="20"
+    android:background="@color/yellow"
+    tools:listitem="@layout/item_bot_message" />
+
+
+</RelativeLayout>

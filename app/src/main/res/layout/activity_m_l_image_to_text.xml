@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.activities.MLImageToTextActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_ml_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/button_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingStart="@dimen/toolbar_title_paddingStart"
+            android:paddingEnd="0dp"
+            android:text="ML TEXT EXTRACT"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_title_text_size"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/fl_ml_image"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_ml_activity">
+
+        <ImageView
+            android:id="@+id/iv_ml_image"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorLightGrey"
+            android:contentDescription="@string/content_description"/>
+
+    </FrameLayout>
+
+    <live.nirmalyasaha.me.bookstore.utils.MSPButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SNAP"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteY="646dp" />
+
+    <live.nirmalyasaha.me.bookstore.utils.MSPButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:text="EXTRACT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <live.nirmalyasaha.me.bookstore.utils.MSPButton
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONFIRM"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/button"/>
+
+    <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+        android:id="@+id/tv_ml_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="DISPLAYS THE EXTRACTED TEXT FROM SNAP"
+        android:textColor="@color/colorSecondaryText"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:maxLines="5"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fl_ml_image" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
