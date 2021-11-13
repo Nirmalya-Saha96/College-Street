@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+    <TextView
         android:id="@+id/tv_Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,7 +18,7 @@
         android:textSize="28sp"
         android:textStyle="bold" />
 
-    <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+    <TextView
         android:id="@+id/tv_About"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
         android:outlineAmbientShadowColor="@color/colorPrimaryDark"
         android:foreground="?selectableItemBackground" />
 
-    <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+    <TextView
         android:id="@+id/tv_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

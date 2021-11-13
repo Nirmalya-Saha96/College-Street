@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/detail_page_bg">
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+        <TextView
             android:id="@+id/tv_product_details_user_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+        <TextView
             android:id="@+id/tv_product_details_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
             app:layout_constraintStart_toStartOf="@+id/tv_product_details_user_name"
             app:layout_constraintTop_toBottomOf="@+id/tv_product_details_user_name" />
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+        <TextView
             android:id="@+id/tv_product_details_price"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tv_product_details_title" />
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+        <TextView
             android:id="@+id/tv_product_details_author"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -76,7 +76,7 @@
             app:layout_constraintStart_toStartOf="@+id/tv_product_details_title"
             app:layout_constraintTop_toBottomOf="@+id/tv_product_details_title" />
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+        <TextView
             android:id="@+id/tv_product_details_stock_quantity"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tv_product_details_author" />
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+        <TextView
             android:id="@+id/tv_product_details_description"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -135,7 +135,7 @@ fkdsfdsjhfvdjhf "
             app:layout_constraintLeft_toLeftOf="parent"
             app:srcCompat="@drawable/ic_vector_cart" />
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPButton
+        <Button
             android:id="@+id/btn_submit_add_fav"
             android:layout_width="180dp"
             android:layout_height="wrap_content"

@@ -34,7 +34,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-    <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+    <TextView
         android:id="@+id/username_textview_new_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
         android:textSize="16sp"
         android:textStyle="bold" />
 
-    <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+    <TextView
         android:id="@+id/tv_email_new_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -47,7 +47,7 @@
 
     </FrameLayout>
 
-    <live.nirmalyasaha.me.bookstore.utils.MSPButton
+    <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteY="646dp" />
 
-    <live.nirmalyasaha.me.bookstore.utils.MSPButton
+    <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <live.nirmalyasaha.me.bookstore.utils.MSPButton
+    <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
         app:layout_constraintStart_toEndOf="@+id/button2"
         app:layout_constraintEnd_toStartOf="@+id/button"/>
 
-    <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+    <EditText
         android:id="@+id/tv_ml_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

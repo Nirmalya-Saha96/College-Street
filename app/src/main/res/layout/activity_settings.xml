@@ -70,7 +70,7 @@
                 android:background="@drawable/user_image_background" />
         </FrameLayout>
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+        <TextView
             android:id="@+id/tv_my_blog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
             android:textColor="@color/colorSecondaryText"
             android:textSize="@dimen/settings_edit_label_textSize" />
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+        <TextView
             android:id="@+id/tv_edit"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
@@ -110,7 +110,7 @@
             android:textColor="@color/colorSecondaryText"
             android:textSize="@dimen/settings_edit_label_textSize" />
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+        <TextView
             android:id="@+id/tv_chats"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -145,7 +145,7 @@
                 android:weightSum="6"
                 android:orientation="horizontal">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2.5"
@@ -155,7 +155,7 @@
                     android:textColor="@color/colorDarkGrey"
                     android:textSize="18sp" />
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:id="@+id/tv_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -174,7 +174,7 @@
                 android:weightSum="6"
                 android:orientation="horizontal">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2.5"
@@ -184,7 +184,7 @@
                     android:textColor="@color/colorDarkGrey"
                     android:textSize="18sp" />
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:id="@+id/tv_gender"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -203,7 +203,7 @@
                 android:weightSum="6"
                 android:orientation="horizontal">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2.5"
@@ -213,7 +213,7 @@
                     android:textColor="@color/colorDarkGrey"
                     android:textSize="18sp" />
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:id="@+id/tv_email"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -232,7 +232,7 @@
                 android:weightSum="6"
                 android:orientation="horizontal">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2.5"
@@ -242,7 +242,7 @@
                     android:textColor="@color/colorDarkGrey"
                     android:textSize="18sp" />
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:id="@+id/tv_mobile_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -261,7 +261,7 @@
                 android:weightSum="6"
                 android:orientation="horizontal">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
@@ -271,7 +271,7 @@
                     android:textColor="@color/colorDarkGrey"
                     android:textSize="18sp" />
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:id="@+id/tv_profession"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -290,7 +290,7 @@
                 android:weightSum="6"
                 android:orientation="horizontal">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2.5"
@@ -300,7 +300,7 @@
                     android:textColor="@color/colorDarkGrey"
                     android:textSize="18sp" />
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:id="@+id/tv_fav_book"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -319,7 +319,7 @@
                 android:weightSum="6"
                 android:orientation="horizontal">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2.5"
@@ -329,7 +329,7 @@
                     android:textColor="@color/colorDarkGrey"
                     android:textSize="18sp" />
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:id="@+id/tv_website"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -355,7 +355,7 @@
             android:orientation="horizontal"
             android:padding="@dimen/settings_address_padding">
 
-            <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/settings_lbl_addresses_margin"
@@ -372,7 +372,7 @@
 
         </LinearLayout>
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPButton
+        <Button
             android:id="@+id/btn_logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

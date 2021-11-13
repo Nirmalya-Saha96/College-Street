@@ -39,7 +39,7 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+        <TextView
             android:id="@+id/tv_cart_item_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
             android:textSize="@dimen/cart_item_title_textSize"
             tools:text="Book Title" />
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+        <TextView
             android:id="@+id/tv_cart_item_author"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+            <TextView
                 android:id="@+id/tv_cart_item_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
                     android:padding="@dimen/ib_cart_item_padding"
                     android:src="@drawable/ic_vector_remove" />
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+                <TextView
                     android:id="@+id/tv_cart_quantity"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

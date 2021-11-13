@@ -58,7 +58,7 @@
                 android:textStyle="bold" />
         </RadioGroup>
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+        <EditText
             android:id="@+id/et_search_text"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
@@ -113,7 +113,7 @@
             android:layout_centerInParent="true"
             android:src="@drawable/ic_vector_search" />
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imgEmptyCart"
@@ -121,6 +121,7 @@
             android:padding="10dp"
             android:text="Type initial letters in searchbar"
             android:textAlignment="center"
+            android:textStyle="bold"
             android:textAppearance="?android:attr/textAppearanceMedium" />
     </RelativeLayout>
 
@@ -140,7 +141,7 @@
             android:layout_centerInParent="true"
             android:src="@drawable/not_found" />
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/iv_not_found_search"

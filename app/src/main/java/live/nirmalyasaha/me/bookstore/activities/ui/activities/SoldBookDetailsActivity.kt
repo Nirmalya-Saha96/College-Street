@@ -83,9 +83,6 @@ class SoldBookDetailsActivity : BaseActivity() {
 
     //function used to update the status in order collection
     private fun updateStatus(productDetails: SoldBooks){
-        //showing the progress bar
-        showProgressDialog("Updating Status")
-
         //getting the fields
         val statusType: String = when {
             rb_pending.isChecked -> {
@@ -94,18 +91,33 @@ class SoldBookDetailsActivity : BaseActivity() {
             rb_transit.isChecked -> {
                 Constants.TRANSIT
             }
+            rb_delivered.isChecked -> {
+                Constants.OUT_FOR_DELIVERY
+            }
             else -> {
                 Constants.DELIVERED
             }
         }
 
-        //creating the sold book status hash map
-        val soldBookStatusHashMap = HashMap<String, Any>()
+        if(statusType == Constants.DELIVERED){
+            val intent = Intent(this, QRCodeScannerActivity::class.java)
+            intent.putExtra(Constants.EXTRA_ORDER_ID, productDetails.order_id)
+            startActivity(intent)
+        }
+        else{
+            //showing the progress bar
+            showProgressDialog("Updating Status")
 
-        soldBookStatusHashMap[Constants.STATUS] = statusType
+            //creating the sold book status hash map
+            val soldBookStatusHashMap = HashMap<String, Any>()
 
-        //updating the status in order collection
-        FirestoreClass().updateStatus(this, productDetails.order_id, soldBookStatusHashMap)
+            soldBookStatusHashMap[Constants.STATUS] = statusType
+
+            //updating the status in order collection
+            FirestoreClass().updateStatus(this, productDetails.order_id, soldBookStatusHashMap)
+        }
+
+
     }
 
     //loading the sold book details

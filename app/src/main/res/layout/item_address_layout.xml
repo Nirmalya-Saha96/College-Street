@@ -19,7 +19,7 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+        <TextView
             android:id="@+id/tv_address_full_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
             android:textSize="@dimen/item_address_name_textSize"
             tools:text="Name" />
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+        <TextView
             android:id="@+id/tv_address_type"
             android:layout_width="wrap_content"
             android:layout_height="42dp"
@@ -44,7 +44,7 @@
 
     </LinearLayout>
 
-    <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+    <TextView
         android:id="@+id/tv_address_mobile_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
         android:textSize="@dimen/address_details_textSize"
         tools:text="+91 9674240883" />
 
-    <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+    <TextView
         android:id="@+id/tv_address_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

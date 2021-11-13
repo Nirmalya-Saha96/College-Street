@@ -29,7 +29,7 @@ tools:context=".activities.ui.fragment.ProductFragment">
             android:layout_centerInParent="true"
             android:src="@drawable/not_found" />
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/iv_not_found_search"

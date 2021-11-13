@@ -58,7 +58,7 @@
             android:layout_centerInParent="true"
             android:src="@drawable/ic_vector_cart" />
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imgEmptyCart"
@@ -88,7 +88,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -97,7 +97,7 @@
                 android:textColor="@color/colorDarkGrey"
                 android:textSize="@dimen/checkout_label_value_textSize" />
 
-            <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+            <TextView
                 android:id="@+id/tv_sub_total"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -112,7 +112,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -121,7 +121,7 @@
                 android:textColor="@color/colorDarkGrey"
                 android:textSize="@dimen/checkout_label_value_textSize" />
 
-            <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+            <TextView
                 android:id="@+id/tv_shipping_charge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -137,7 +137,7 @@
             android:background="@color/yellow"
             android:orientation="horizontal">
 
-            <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -146,7 +146,7 @@
                 android:textColor="@color/colorDarkGrey"
                 android:textSize="@dimen/checkout_label_value_textSize" />
 
-            <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+            <TextView
                 android:id="@+id/tv_total_amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -156,7 +156,7 @@
                 tools:text="$110" />
         </LinearLayout>
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPButton
+        <Button
             android:id="@+id/btn_checkout"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
