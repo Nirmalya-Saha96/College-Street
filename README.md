@@ -12,6 +12,7 @@ Solution: Now, you can exchange books through this application with endtoend enc
 - Make your library of Book Review/Blog with added like, unlike, add, update, delete, share features
 - End-To-End ENCRYPTED MESSAGING with a separate unread message activity for all your unread messages(chatsupport)
 - Search Engine with filters and added Image-To-Text Processing, to search any book/review by taking a snap using Firebase ML Kit
+- QR Code Scanner for 2-way verification at the time of delivery by both seller and buyer
 - ChatBot functionality (trained to guide with the application)
 - Add your products(Books), remove, update anytime
 - WISHLIST for your favorite item, at a place by a SQLite database
@@ -44,6 +45,15 @@ Solution: Now, you can exchange books through this application with endtoend enc
 - AES technology(End-To-End Encryption of Address & Messages)
 - SQLite Database(WishList)
 - Google Maps Api (to show encrypted address in maps
+- QR Code Scanner
+
+# Security
+
+- Cryptography AES(Advanced Encryption Standard)-Technology is used to encrypt and decrypt in a symmetric manner of addresses and messages
+- QR Code Generator and Scanner for 2-way verification for buyer and seller at the time of delivery
+        * Buyer generating the QR Code 
+        * Seller Scanning the QR Code 
+        * If the specific QR Code matches it confirms the state of delivery
 
 # Firebase Functionality
 
