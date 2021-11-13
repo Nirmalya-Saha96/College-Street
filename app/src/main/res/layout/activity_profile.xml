@@ -83,7 +83,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/fl_user_image">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+                <EditText
                     android:id="@+id/et_first_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -107,7 +107,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/til_first_name">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+                <EditText
                     android:id="@+id/et_last_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -132,7 +132,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/til_last_name">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+                <EditText
                     android:id="@+id/et_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -156,7 +156,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/til_emaill">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+                <EditText
                     android:id="@+id/et_mobile_number"
                     android:layout_width="match_parent"
                     android:layout_height="59dp"
@@ -180,7 +180,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/til_mobile_number">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+                <EditText
                     android:id="@+id/et_fav_book"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -204,7 +204,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/til_fav_book">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+                <EditText
                     android:id="@+id/et_website"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -298,7 +298,7 @@
                     android:textStyle="bold" />
             </RadioGroup>
 
-            <live.nirmalyasaha.me.bookstore.utils.MSPButton
+            <Button
                 android:id="@+id/btn_submit"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"

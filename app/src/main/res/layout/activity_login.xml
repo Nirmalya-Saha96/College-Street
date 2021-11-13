@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/detail_page_bg">
 
-            <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+            <TextView
                 android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_title">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+                <EditText
                     android:id="@+id/et_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -77,7 +77,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/til_email">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+                <EditText
                     android:id="@+id/et_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
                     tools:text="123456" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+            <TextView
                 android:id="@+id/tv_forgot_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -98,10 +98,11 @@
                 android:text="@string/lbl_forgot_password"
                 android:textColor="@color/colorSecondaryText"
                 android:textSize="@dimen/forgot_password_textSize"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/til_password" />
 
-            <live.nirmalyasaha.me.bookstore.utils.MSPButton
+            <Button
                 android:id="@+id/btn_login"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -131,7 +132,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/btn_login">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+                <TextView
                     android:id="@+id/tv_don_t_have_an_account"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -141,7 +142,7 @@
                     android:textColor="@color/colorSecondaryText"
                     android:textSize="@dimen/lbl_text_view_textSize" />
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:id="@+id/tv_register"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

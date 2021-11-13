@@ -76,6 +76,7 @@ object Constants {
     const val TRANSIT: String = "In Transit"
     const val DELIVERED: String = "Delivered"
     const val STATUS: String = "status"
+    const val OUT_FOR_DELIVERY: String = "Out for delivery"
 
     //message
     const val FROM_ID: String = "fromId"
@@ -122,6 +123,7 @@ object Constants {
     const val BLOG_REVIEW_EXTRA_DETAILS: String = "extra_blog_review_details"
     const val EXTRA_BLOG_ID: String = "extra_blog_id"
     const val EXTRA_EXTRACTED_TEXT: String = "extra_extracted_text"
+    const val EXTRA_ORDER_ID: String = "extra_order_id"
 
     //function used to show a chooser
     fun showImageChooser(activity: Activity){

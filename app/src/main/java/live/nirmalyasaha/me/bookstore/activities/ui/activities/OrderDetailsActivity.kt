@@ -56,6 +56,12 @@ class OrderDetailsActivity : BaseActivity() {
         btn_call_order.setOnClickListener {
             makePhone()
         }
+
+        btn_receive_book.setOnClickListener {
+            val intent = Intent(this, GenerateQRCodeActivity::class.java)
+            intent.putExtra(Constants.EXTRA_ORDER_ID, mOrderDetails.id)
+            startActivity(intent)
+        }
     }
 
     //function to backpress the action bar

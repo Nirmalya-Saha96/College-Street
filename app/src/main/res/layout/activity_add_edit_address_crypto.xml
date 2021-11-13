@@ -54,7 +54,7 @@ tools:context=".activities.ui.activities.AddEditAddressCryptoActivity">
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+            <EditText
                 android:id="@+id/et_full_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -78,7 +78,7 @@ tools:context=".activities.ui.activities.AddEditAddressCryptoActivity">
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/til_full_name">
 
-            <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+            <EditText
                 android:id="@+id/et_phone_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -102,7 +102,7 @@ tools:context=".activities.ui.activities.AddEditAddressCryptoActivity">
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/til_phone_number">
 
-            <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+            <EditText
                 android:id="@+id/et_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -166,7 +166,7 @@ tools:context=".activities.ui.activities.AddEditAddressCryptoActivity">
                 android:textStyle="bold" />
         </RadioGroup>
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPButton
+        <Button
             android:id="@+id/btn_submit_address"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
@@ -175,7 +175,6 @@ tools:context=".activities.ui.activities.AddEditAddressCryptoActivity">
             android:layout_marginTop="30dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/round_text_fields"
-            android:foreground="?attr/selectableItemBackground"
             android:gravity="center"
             android:paddingTop="@dimen/btn_padding"
             android:paddingBottom="@dimen/btn_padding"

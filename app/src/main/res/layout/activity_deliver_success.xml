@@ -4,7 +4,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:background="@color/colorPrimary"
-tools:context=".activities.ui.activities.OrderSuccessActivity">
+tools:context=".activities.ui.activities.DeliverSuccessActivity">
 
 
 <RelativeLayout
@@ -25,15 +25,15 @@ tools:context=".activities.ui.activities.OrderSuccessActivity">
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Book Ordered Securely"
+        android:text="BOOK DELEVERED SUCCESSFULLY"
         android:textColor="@android:color/white"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:layout_marginTop="10dp"/>
 
     <Button
-        android:id="@+id/btnOk"
+        android:id="@+id/btn_Ok"
         android:layout_width="100dp"
         android:layout_height="48dp"
         android:text="Ok"
@@ -42,7 +42,9 @@ tools:context=".activities.ui.activities.OrderSuccessActivity">
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="15dp"
         android:background="@drawable/item_primary_color_border_background"
-        android:textColor="@color/colorPrimaryText" />
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
 
 </RelativeLayout>
 </FrameLayout>

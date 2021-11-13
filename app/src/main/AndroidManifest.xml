@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <uses-feature
         android:name="android.hardware.camera2"
@@ -22,7 +23,10 @@
         android:roundIcon="@mipmap/ic_app_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BookStore">
-        <activity android:name=".activities.ui.activities.UserBlogActivity"></activity>
+        <activity android:name=".activities.ui.activities.DeliverSuccessActivity"></activity>
+        <activity android:name=".activities.ui.activities.QRCodeScannerActivity" />
+        <activity android:name=".activities.ui.activities.GenerateQRCodeActivity" />
+        <activity android:name=".activities.ui.activities.UserBlogActivity" />
         <activity android:name=".activities.ui.activities.UsersBookActivity" />
         <activity android:name=".activities.ui.activities.MLImageToTextActivity" />
 

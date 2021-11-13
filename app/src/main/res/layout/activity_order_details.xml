@@ -45,7 +45,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/my_order_details_content_marginStartEnd"
@@ -73,7 +73,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -82,7 +82,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
                     android:textStyle="bold"
                     android:textSize="@dimen/my_order_details_label_value_textSize" />
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+                <TextView
                     android:id="@+id/tv_order_details_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -97,7 +97,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -106,7 +106,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
                     android:textStyle="bold"
                     android:textSize="@dimen/my_order_details_label_value_textSize" />
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+                <TextView
                     android:id="@+id/tv_order_details_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -121,7 +121,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -130,7 +130,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
                     android:textStyle="bold"
                     android:textSize="@dimen/my_order_details_label_value_textSize" />
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+                <TextView
                     android:id="@+id/tv_order_status"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -143,7 +143,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
             </LinearLayout>
         </LinearLayout>
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/my_order_details_content_marginStartEnd"
@@ -162,7 +162,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
             android:background="@color/white"
             android:layout_height="wrap_content" />
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/my_order_details_content_marginStartEnd"
@@ -192,7 +192,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:id="@+id/tv_my_order_details_full_name"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -201,7 +201,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
                     android:textSize="@dimen/item_address_name_textSize"
                     tools:text="Name" />
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:id="@+id/tv_my_order_details_address_type"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -223,7 +223,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+                <TextView
                     android:id="@+id/tv_my_order_details_mobile_number"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -245,7 +245,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
 
             </LinearLayout>
 
-            <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+            <TextView
                 android:id="@+id/tv_my_order_details_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -256,7 +256,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
 
         </LinearLayout>
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/my_order_details_content_marginStartEnd"
@@ -282,7 +282,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -291,7 +291,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
                     android:textSize="@dimen/my_order_details_label_value_textSize"
                     android:textStyle="bold" />
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+                <TextView
                     android:id="@+id/tv_order_details_sub_total"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -306,7 +306,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -315,7 +315,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
                     android:textSize="@dimen/my_order_details_label_value_textSize"
                     android:textStyle="bold" />
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+                <TextView
                     android:id="@+id/tv_order_details_shipping_charge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -330,7 +330,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -339,7 +339,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
                     android:textSize="@dimen/my_order_details_label_value_textSize"
                     android:textStyle="bold" />
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                <TextView
                     android:id="@+id/tv_order_details_total_amount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -350,7 +350,27 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
             </LinearLayout>
         </LinearLayout>
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPButton
+        <Button
+            android:id="@+id/btn_receive_book"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/round_text_fields"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingTop="@dimen/btn_padding"
+            android:paddingBottom="@dimen/btn_padding"
+            android:text="RECEIVE PACKAGE"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_textSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rg_type" />
+
+        <Button
             android:id="@+id/btn_submit_cancel_order"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
@@ -368,7 +388,7 @@ tools:context=".activities.ui.activities.OrderDetailsActivity">
             android:textSize="@dimen/btn_textSize"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/rg_type" />
+            app:layout_constraintTop_toBottomOf="@id/btn_receive_book" />
 
     </LinearLayout>
 </ScrollView>

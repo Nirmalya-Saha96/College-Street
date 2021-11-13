@@ -890,6 +890,21 @@ class FirestoreClass {
                 }
     }
 
+    fun updateStatusDelivery(activity: QRCodeScannerActivity, orderId: String, soldBookStatusHashMap: HashMap<String, Any>){
+        //updating the user informations
+        mFirestore.collection(Constants.ORDER)
+            .document(orderId)
+            .update(soldBookStatusHashMap)
+            .addOnSuccessListener {
+                activity.successStatusUpdate()
+            }
+            .addOnFailureListener{e->
+                //hiding the progress bar
+                activity.hideProgressDialog()
+                Log.e(activity.javaClass.simpleName, "Error while updating user details", e)
+            }
+    }
+
     //function used to cancel an order
     fun cancelOrder(activity: OrderDetailsActivity, orderID: String){
         mFirestore.collection(Constants.ORDER)

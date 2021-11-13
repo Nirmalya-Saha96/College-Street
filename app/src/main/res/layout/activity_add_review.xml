@@ -43,7 +43,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar_add_review_activity">
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+        <EditText
             android:id="@+id/et_review_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
             android:textSize="@dimen/et_textSize" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <live.nirmalyasaha.me.bookstore.utils.MSPButton
+    <Button
         android:id="@+id/btn_submit_add_review"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

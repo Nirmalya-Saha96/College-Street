@@ -80,7 +80,7 @@
         android:layout_marginRight="40dp"
         android:layout_marginBottom="60dp"/>
 
-    <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+    <TextView
         android:id="@+id/tv_add_address"
         android:layout_width="329dp"
         android:layout_height="101dp"

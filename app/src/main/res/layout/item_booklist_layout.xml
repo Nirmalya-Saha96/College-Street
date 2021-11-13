@@ -42,7 +42,7 @@
         app:layout_constraintStart_toEndOf="@id/ll_item_image"
         app:layout_constraintTop_toTopOf="parent">
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+        <TextView
             android:id="@+id/tv_item_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
             android:textSize="@dimen/rv_item_name_textSize"
             tools:text="Book Name" />
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+        <TextView
             android:id="@+id/tv_item_author"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
             android:textSize="@dimen/rv_item_name_textSize"
             tools:text="Book Author" />
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+        <TextView
             android:id="@+id/tv_item_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

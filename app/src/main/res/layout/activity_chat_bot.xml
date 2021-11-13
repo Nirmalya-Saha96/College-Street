@@ -14,7 +14,7 @@ tools:context=".activities.ui.activities.ChatBotActivity">
     android:layout_alignParentBottom="true"
     android:orientation="horizontal">
 
-    <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+    <EditText
         android:id="@+id/et_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

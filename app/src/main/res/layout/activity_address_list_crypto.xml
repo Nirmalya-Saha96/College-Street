@@ -23,7 +23,7 @@ tools:context=".activities.ui.activities.AddressListCryptoActivity">
             android:layout_height="wrap_content"
             android:background="@drawable/details_page_right_round">
 
-            <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="20dp"
@@ -63,7 +63,7 @@ tools:context=".activities.ui.activities.AddressListCryptoActivity">
                     android:layout_centerInParent="true"
                     android:src="@drawable/ic_vector_address" />
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/imgEmptyCart"
@@ -94,7 +94,7 @@ tools:context=".activities.ui.activities.AddressListCryptoActivity">
         android:layout_marginRight="40dp"
         android:layout_marginBottom="60dp"/>
 
-    <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+    <TextView
         android:id="@+id/tv_add_address"
         android:layout_width="329dp"
         android:layout_height="101dp"

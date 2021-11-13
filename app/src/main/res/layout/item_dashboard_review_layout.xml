@@ -24,7 +24,7 @@
             android:contentDescription="@string/content_description"
             android:src="@drawable/splash_background"/>
 
-                    <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                    <TextView
                         android:id="@+id/review_user_name_title"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
                     android:paddingEnd="@dimen/dashboard_item_paddingStartEnd"
                     android:paddingBottom="15dp">
 
-                    <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                    <TextView
                         android:id="@+id/tv_review_item_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
                         android:textStyle="bold"
                         tools:text="Item Name" />
 
-                    <live.nirmalyasaha.me.bookstore.utils.MSPTextViewBold
+                    <TextView
                         android:id="@+id/tv_review_item_auhtor"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
                         android:textStyle="bold"
                         tools:text="Author" />
 
-                    <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+                    <TextView
                         android:id="@+id/tv_review_item_price"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
                         android:textStyle="bold"
                         tools:text="$100.00" />
 
-                    <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+                    <TextView
                     android:id="@+id/tv_review_item_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

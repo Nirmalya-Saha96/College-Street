@@ -84,7 +84,7 @@ tools:context=".activities.ui.activities.AddBlogReviewActivity">
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/fl_blog_review_image">
 
-            <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+            <EditText
                 android:id="@+id/et_blog_review_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -110,7 +110,7 @@ tools:context=".activities.ui.activities.AddBlogReviewActivity">
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/til_blog_review_title">
 
-            <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+            <EditText
                 android:id="@+id/et_blog_review_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -122,7 +122,7 @@ tools:context=".activities.ui.activities.AddBlogReviewActivity">
                 android:textSize="@dimen/et_textSize" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <live.nirmalyasaha.me.bookstore.utils.MSPButton
+        <Button
             android:id="@+id/btn_submit_add_blog_review"
             android:layout_width="300dp"
             android:layout_height="wrap_content"

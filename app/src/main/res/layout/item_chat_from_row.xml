@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="12dp">
 
-    <live.nirmalyasaha.me.bookstore.utils.MSPTextView
+    <TextView
         android:id="@+id/textView_from_row"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

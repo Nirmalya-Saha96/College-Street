@@ -84,7 +84,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/fl_product_image">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+                <EditText
                     android:id="@+id/et_product_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/til_product_title">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+                <EditText
                     android:id="@+id/et_product_author"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -134,7 +134,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/til_product_author">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+                <EditText
                     android:id="@+id/et_product_price"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -160,7 +160,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/til_product_price">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+                <EditText
                     android:id="@+id/et_product_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -186,7 +186,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/til_product_description">
 
-                <live.nirmalyasaha.me.bookstore.utils.MSPEditText
+                <EditText
                     android:id="@+id/et_product_quantity"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -197,7 +197,7 @@
                     android:textSize="@dimen/et_textSize" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <live.nirmalyasaha.me.bookstore.utils.MSPButton
+            <Button
                 android:id="@+id/btn_submit_add_product"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
